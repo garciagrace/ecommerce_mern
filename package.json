@@ -1,0 +1,15 @@
+{
+  "name": "ecommerce_mern",
+  "version": "1.0.0",
+  "description": "MERN ecommerce website",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server/server"
+  },
+  "author": "Grace Garcia",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
