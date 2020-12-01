@@ -1,6 +1,5 @@
 const products = [
   {
-    _id: '1',
     name: 'Razer Hammerhead True Wireless Earbuds',
     image: '/images/tws.jpg',
     description:
@@ -13,7 +12,6 @@ const products = [
     numReviews: 28,
   },
   {
-    _id: '2',
     name: 'Apple Macbook Air 13" 256GB 2020 Edition',
     image: '/images/air.jpeg',
     description:
@@ -26,7 +24,6 @@ const products = [
     numReviews: 7,
   },
   {
-    _id: '3',
     name: 'Asus ROG Strix Scar G532LW-AZ071TS',
     image: '/images/scar.jpg',
     description:
@@ -39,7 +36,6 @@ const products = [
     numReviews: 10,
   },
   {
-    _id: '4',
     name: 'Xbox One S 1TB Two Controller Bundle',
     image: '/images/xbox.jpg',
     description:
@@ -52,7 +48,6 @@ const products = [
     numReviews: 8,
   },
   {
-    _id: '5',
     name: 'PS4 Slim 1TB Mega Pack 2 Bundle',
     image: '/images/ps4.png',
     description:
@@ -65,7 +60,6 @@ const products = [
     numReviews: 10,
   },
   {
-    _id: '6',
     name: 'Nintendo Switch v2 with Neon Joy-Con',
     image: '/images/switch.jpg',
     description:
@@ -78,7 +72,6 @@ const products = [
     numReviews: 28,
   },
   {
-    _id: '7',
     name: 'Asus ROG Phone 3 512GB 12GB ZS661KS',
     image: '/images/phone.jpg',
     description:
