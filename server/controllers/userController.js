@@ -24,4 +24,23 @@ const authUser = asyncHandler(async (req, res) => {
   }
 });
 
-export { authUser };
+// Desc:   Get user profile
+// Route:  GET /api/users/profile
+// Access: Private
+const getUserProfile = asyncHandler(async (req, res) => {
+  const user = await User.findById(req.user.id);
+
+  if (user) {
+    res.json({
+      _id: user._id,
+      name: user.name,
+      email: user.email,
+      isAdmin: user.isAdmin,
+    });
+  } else {
+    res.status;
+    throw new Error();
+  }
+});
+
+export { authUser, getUserProfile };
