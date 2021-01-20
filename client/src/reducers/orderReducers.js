@@ -56,6 +56,6 @@ export const orderDetailsReducer = (
       };
 
     default:
-      return {};
+      return state;
   }
 };

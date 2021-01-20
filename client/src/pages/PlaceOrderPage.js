@@ -31,6 +31,13 @@ const PlaceOrderPage = ({ history }) => {
   const orderCreate = useSelector((state) => state.orderCreate);
   const { order, success, error } = orderCreate;
 
+  useEffect(() => {
+    if (success) {
+      history.push(`/orders/${order._id}`);
+    }
+    // eslint-disable-next-line
+  }, [history, success]);
+
   const placeOrderHandler = () => {
     dispatch(
       createOrder({
