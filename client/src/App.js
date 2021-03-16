@@ -33,6 +33,7 @@ const App = () => {
           <Route path='/orders/:id' component={OrderPage} />
           <Route path='/admin/users' component={UserListPage} />
           <Route path='/admin/users/:id/edit' component={UserEditPage} />
+          <Route path='/admin/productlist' component={ProductListPage} />
           <Route path='/' component={HomePage} exact />
         </Container>
       </main>
