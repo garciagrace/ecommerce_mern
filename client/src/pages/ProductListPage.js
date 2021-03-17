@@ -4,7 +4,6 @@ import { Table, Button, Row, Col } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import Message from '../components/Message';
 import Loader from '../components/Loader';
-import Paginate from '../components/Paginate';
 import { listProducts } from '../actions/productActions';
 
 const ProductListPage = ({ history, match }) => {
@@ -21,20 +20,16 @@ const ProductListPage = ({ history, match }) => {
       history.push('/login');
     }
 
-    if (successCreate) {
-      history.push(`/admin/product/${createdProduct._id}/edit`);
-    } else {
-      dispatch(listProducts());
-    }
+    dispatch(listProducts());
   }, [dispatch, history, userInfo]);
 
-  const deleteHandler = (id) => {
+  const deleteProductHandler = (id) => {
     if (window.confirm('Are you sure')) {
       // DELETE PRODUCT
     }
   };
 
-  const createHandler = (product) => {
+  const createProductHandler = (product) => {
     // CREATE PRODUCT
   };
 
@@ -84,7 +79,7 @@ const ProductListPage = ({ history, match }) => {
                     <Button
                       variant='danger'
                       className='btn-sm'
-                      onClick={() => deleteHandler(product._id)}
+                      onClick={() => deleteProductHandler(product._id)}
                     >
                       <i className='fas fa-trash'></i>
                     </Button>
