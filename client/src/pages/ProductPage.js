@@ -11,8 +11,8 @@ import {
   Form,
 } from 'react-bootstrap';
 import Rating from '../components/Rating';
-import Loader from '../components/Loader';
 import Message from '../components/Message';
+import Loader from '../components/Loader';
 import {
   listProductDetails,
   createProductReview,
@@ -154,7 +154,6 @@ const ProductPage = ({ history, match }) => {
               </Card>
             </Col>
           </Row>
-
           <Row>
             <Col md={6}>
               <h2>Reviews</h2>
