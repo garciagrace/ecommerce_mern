@@ -10,7 +10,7 @@ const Meta = ({ title }) => {
 };
 
 Meta.defaultProps = {
-  title: 'Welcome To ProShop',
+  title: 'Welcome To GadgetShop',
 };
 
 export default Meta;
